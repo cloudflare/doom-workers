@@ -8,3 +8,8 @@ wasm-pack.log
 worker/
 node_modules/
 .cargo-ok
+.env
+assets/websockets-doom.wasm
+assets/websockets-doom.wasm.map
+assets/websockets-doom.js
+assets/doom1.wad

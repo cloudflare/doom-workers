@@ -1,0 +1,16 @@
+name = "doom-router"
+type = "javascript"
+# account_id = "..."
+# zone_id = "..."
+workers_dev = false
+route = "router.silentspacemarine.com/*"
+
+[build.upload]
+format = "modules"
+dir = "./router"
+main = "./index.mjs"
+
+[durable_objects]
+bindings = [
+  { name = "router", class_name = "Router" }
+]

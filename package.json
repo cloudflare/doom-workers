@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "doom-workers",
+  "version": "0.0.1",
+  "description": "Doom Workers",
+  "author": "Celso Martinho <celso@cloudflare.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/kv-asset-handler": "^0.1.1",
+    "prettier": "^1.18.2"
+  }
+}

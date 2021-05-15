@@ -2,7 +2,7 @@
 
 This repo contains two Workers
 
-- Website for https://edgedoom.com/ in [Cloudflare Pages][3]
+- Website for https://silentspacemarine.com/ in [Cloudflare Pages][3]
 - Doom Wasm message router, using [WebSockets][1] and [Durable Objects][2]
 
 ## Website
@@ -108,8 +108,8 @@ Read more about Edge Doom in our [blog post here][5].
 [2]: https://developers.cloudflare.com/workers/runtime-apis/durable-objects
 [3]: https://developers.cloudflare.com/pages/
 [4]: wrangler-site.toml
-[5]: https://blog.cloudflare.com/
-[6]: https://edgedoom.com/
+[5]: https://blog.cloudflare.com/doom-multiplayer-workers
+[6]: https://silentspacemarine.com/
 [7]: router/index.mjs
 [8]: assets
 [9]: site/index.js

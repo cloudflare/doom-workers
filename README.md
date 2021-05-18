@@ -1,9 +1,9 @@
-# Edge Doom Workers
+# Multiplayer Doom Workers
 
 This repo contains two Workers
 
 - Website for https://silentspacemarine.com/ in [Cloudflare Pages][3]
-- Doom Wasm message router, using [WebSockets][1] and [Durable Objects][2]
+- Wasm Doom message router, using [WebSockets][1] and [Durable Objects][2]
 
 ## Website
 
@@ -28,16 +28,16 @@ wrangler publish --config wrangler-site.toml
 
 Adjust [wrangler-site.toml][4] to your ```account_id``` and ```zone_id```.
 
-## Doom Wasm message router
+## Wasm Doom message router
 
 Our message router has the following requirements:
 
-- Accept Doom Wasm WebSocket connections and build a routing table
+- Accept Wasm Doom WebSocket connections and build a routing table
 - Receive and parse the incoming messages
 - Broadcast the messages to the corresponding clients
 - Handle some REST APIs to create and validate Doom rooms (sessions)
 
-Just supports the network multiplayer in our [Edge Doom][6] showcase project.
+Just supports the network multiplayer in our [Silent Space Marine][6] showcase project.
 
 Read more about it in our [blog post here][5].
 
@@ -88,9 +88,9 @@ Run ```make```:
 make publish
 ```
 
-## Running Edge Doom locally
+## Running Multiplayer Doom locally
 
-You can run the Website, Doom Wasm and Multiplayer locally, in your computer, using a NodeJS WebSocket router implementation.
+You can run the Website, Wasm Doom and Multiplayer locally, in your computer, using a NodeJS WebSocket router implementation.
 
 First install [NodeJS][13] and npm. Then:
 
@@ -102,7 +102,7 @@ npm install
 
 Point your browser to http://0.0.0.0:8000
 
-Read more about Edge Doom in our [blog post here][5].
+Read more about Multiplayer Doom on Cloudflare Workers in our [blog post here][5].
 
 [1]: https://developers.cloudflare.com/workers/runtime-apis/websockets
 [2]: https://developers.cloudflare.com/workers/runtime-apis/durable-objects

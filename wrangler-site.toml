@@ -1,11 +1,15 @@
 name = "doom"
-# account_id = "..."
-# zone_id = "..."
-# https://developers.cloudflare.com/workers/cli-wrangler/webpack
-type = "webpack"
-webpack_config = "site/webpack.js"
+compatibility_date = "2023-06-02"
+# main = "site/index.js"
+
+account_id = ""
 workers_dev = false
-route = "silentspacemarine.com/*"
+routes = [
+	# Change to the route and zone you want to deploy the Worker on
+	{ pattern = "doom.example.com/*", zone_name = "example.com" }
+]
+
+webpack_config = "site/webpack.js"
 
 [site]
 bucket = "./assets"
@@ -13,6 +17,5 @@ entry-point = "site"
 
 [build]
 command = "npm install"
-upload.format = "service-worker"
 watch_dir="./site"
 

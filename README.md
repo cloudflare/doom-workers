@@ -11,7 +11,7 @@ Assets are in [./assets][8]
 
 Worker code is in [site/index.js][9]
 
-You need the following files in ```./assets``` (not included in this repo):
+**You need the following files in ```./assets``` (not included in this repo)**:
 
  * [doom1.wad][15] (md5sum: f0cefca49926d00903cf57551d901abe)
  * [websockets-doom.js][16] - get it from doom-wasm src directory after compilation

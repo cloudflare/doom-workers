@@ -1,16 +1,20 @@
 name = "doom-router"
-type = "javascript"
-# account_id = "..."
-# zone_id = "..."
-workers_dev = false
-route = "router.silentspacemarine.com/*"
+main = "router/index.mjs"
+compatibility_date = "2023-06-02"
 
-[build.upload]
-format = "modules"
-dir = "./router"
-main = "./index.mjs"
+account_id = ""
+workers_dev = false
+routes = [
+	# Change to the route and zone you want to deploy the Worker on.
+	{ pattern = "router.example.com/*", zone_name = "example.com" }
+]
 
 [durable_objects]
 bindings = [
   { name = "router", class_name = "Router" }
 ]
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["Router"]
+

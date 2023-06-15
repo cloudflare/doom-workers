@@ -5,8 +5,13 @@
   "description": "Doom Workers",
   "author": "Celso Martinho <celso@cloudflare.com>",
   "license": "MIT",
+  "scripts":{
+    "copy-assets": "cp ../doom-wasm/src/websockets-doom.wasm assets/websockets-doom.wasm && cp ../doom-wasm/src/websockets-doom.wasm.map assets/websockets-doom.wasm.map && cp ../doom-wasm/src/websockets-doom.js assets/websockets-doom.js"
+  },
   "devDependencies": {
     "@cloudflare/kv-asset-handler": "^0.1.1",
-    "prettier": "^1.18.2"
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "prettier": "^1.18.2",
+    "typescript": "^5.1.3"
   }
 }
